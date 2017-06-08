@@ -13,7 +13,7 @@ import { Task } from './task.model';
 
 
     <hr>
-    <edit-task [childSelectedTask]="selectedTask"></edit-task>
+    <edit-task [childSelectedTask]="selectedTask" (doneButtonClickedSender)="finishedEditing()"></edit-task>
   </div>
   `
   //The template portion (above) provides the HTML that will be displayed wherever the component is placed. Because we've defined our root component's selector property as app-root, the HTML listed in the template property will be rendered wherever the <app-root></app-root> tags are placed. We placed ours directly in the <body> tags of index.html. So, the HTML <h1>My First Angular 2 App</h1> will render in those same <body> tags.
